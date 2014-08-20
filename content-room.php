@@ -49,7 +49,6 @@ if ( 'content' != $settings['post_content'] && ! is_singular() )
 	woo_image( 'width=' . esc_attr( $settings['thumb_w'] ) . '&height=' . esc_attr( $settings['thumb_h'] ) . '&class=thumbnail ' . esc_attr( $settings['thumb_align'] ) );
 ?>
 	<header>
-	asdasd
 	<?php the_title( $title_before, $title_after ); ?>
 	</header>
 <?php
@@ -60,6 +59,7 @@ woo_post_meta();
 if ( 'content' == $settings['post_content'] || is_single() ) { the_content( __( 'Continue Reading &rarr;', 'woothemes' ) ); } else { the_excerpt(); }
 if ( 'content' == $settings['post_content'] || is_singular() ) wp_link_pages( $page_link_args );
 ?>
+<?php echo get_post_meta($post->ID, "price", true); ?>
 	</section><!-- /.entry -->
 	<div class="fix"></div>
 <?php
