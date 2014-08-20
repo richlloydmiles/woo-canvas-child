@@ -59,7 +59,13 @@ woo_post_meta();
 if ( 'content' == $settings['post_content'] || is_single() ) { the_content( __( 'Continue Reading &rarr;', 'woothemes' ) ); } else { the_excerpt(); }
 if ( 'content' == $settings['post_content'] || is_singular() ) wp_link_pages( $page_link_args );
 ?>
-<?php echo get_post_meta($post->ID, "price", true); ?>
+<!-- Added WooCurrency Converter Widget Classes -->
+	<span class="price">
+		<span class="amount" >
+			<?php echo get_post_meta($post->ID, "price", true); ?>
+		</span>
+	</span>
+
 	</section><!-- /.entry -->
 	<div class="fix"></div>
 <?php
