@@ -1,0 +1,15 @@
+/*
+	Theme Name: Canvas Child Theme
+	Theme URI: http://lsdev.biz/
+	Description: Child Theme for testing woo commerce
+	Author: Richard Miles
+	Author URI: http://lsdev.biz/
+	Version: 1.0
+	Tags: lightspeed, lsdev, LSX, child theme, woocommerce
+	Template: canvas
+	Copyright: (c) 2014 LightSpeed Web Development.
+	License: GNU General Public License v2.0
+	License URI: http://www.gnu.org/licenses/gpl-2.0.html
+*/
+
+@import url("../canvas/style.css");
